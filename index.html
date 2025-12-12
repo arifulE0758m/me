@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ariful Islam | AI Web Experience Architect</title>
+    <meta name="description" content="Creative Developer & UI/UX Designer specializing in cinematic web experiences and AI-powered interfaces.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+</head>
+<body>
+    <!-- Ambient Lighting Orbs -->
+    <div class="ambient-light orb-1"></div>
+    <div class="ambient-light orb-2"></div>
+    <div class="ambient-light orb-3"></div>
+    
+    <!-- Particle Canvas -->
+    <canvas id="particle-canvas"></canvas>
+    
+    <!-- Video Background -->
+    <div class="video-background">
+        <video autoplay muted loop playsinline id="bg-video">
+    <source src="https://assets.mixkit.co/videos/preview/mixkit-abstract-waves-1580-large.webm" type="video/webm">
+    <source src="https://assets.mixkit.co/videos/preview/mixkit-abstract-waves-1580-large.mp4" type="video/mp4">
+</video>
+        <div class="video-overlay"></div>
+    </div>
+    
+    <!-- Cursor Follower -->
+    <div class="cursor-follower"></div>
+    
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-logo">
+                <span class="logo-text">Ariful</span>
+                <div class="logo-glow"></div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-glass">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="title-line">Ariful Islam</span>
+                    </h1>
+                    <div class="title-rotator">
+                        <div class="rotating-titles">
+                            <div class="title-item active">Creative Developer</div>
+                            <div class="title-item">UI/UX Designer</div>
+                            <div class="title-item">Frontend Engineer</div>
+                            <div class="title-item">AI Web Experience Architect</div>
+                        </div>
+                        <div class="rotator-underline"></div>
+                    </div>
+                    <p class="hero-subtitle">
+                        Building immersive, cinematic digital experiences that blend cutting-edge technology with elegant design.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary magnetic" data-sound="hover1">
+                            <span class="btn-text">View My Work</span>
+                            <span class="btn-glow"></span>
+                        </button>
+                        <button class="btn btn-secondary magnetic" data-sound="hover2">
+                            <span class="btn-text">About Me</span>
+                            <span class="btn-glow"></span>
+                        </button>
+                        <button class="btn btn-tertiary magnetic" data-sound="hover3">
+                            <span class="btn-text">Contact / Hire Me</span>
+                            <span class="btn-glow"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-glass-reflection"></div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <div class="scroll-line"></div>
+                <span>Scroll</span>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-subtitle">The mind behind the magic</div>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image-container">
+                    <div class="image-frame">
+                        <div class="image-placeholder" style="background-image: url('./assets/images/profile.png');">
+                            <div class="image-glow"></div>
+                            <div class="image-text">Ariful Islam</div>
+                        </div>
+                        <div class="image-reflection"></div>
+                    </div>
+                </div>
+                
+                <div class="about-text">
+                    <h3 class="about-headline">Crafting digital experiences that feel <span class="highlight">alive</span></h3>
+                    <p>I'm Ariful Islam, a passionate creative developer with a unique vision for blending technology with artistry. My journey in web development is driven by a fascination with how digital interfaces can evoke emotion and create memorable experiences.</p>
+                    
+                    <p>With expertise in <span class="highlight">JavaScript, HTML, and CSS</span>, I specialize in building smooth, interactive web applications that feel both futuristic and intuitive. I have a particular talent for <span class="highlight">UI motion design</span> and creating interfaces that respond to user interaction with elegance.</p>
+                    
+                    <p>My work often focuses on building <span class="highlight">kid-friendly, creative experiences</span> that make technology accessible and enjoyable for all ages. I believe that great design should be inclusive, engaging, and spark curiosity.</p>
+                    
+                    <p>As an aspiring software engineer, I'm constantly exploring new technologies, particularly in the <span class="highlight">AI and interactive animation</span> spaces. My dream is to build stunning applications that combine beautiful visuals, immersive sound design, and vibrant UI to tell compelling digital stories.</p>
+                    
+                    <div class="about-quote">
+                        <div class="quote-icon">"</div>
+                        <p>I believe the future of web experiences lies at the intersection of cinematic storytelling and interactive technology.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="section-header">
+                <h2 class="section-title">My Skills</h2>
+                <div class="section-subtitle">Tools & technologies I master</div>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-cube">
+                    <div class="cube-inner">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML5</h3>
+                        <p>Semantic, accessible markup</p>
+                    </div>
+                    <div class="cube-glow"></div>
+                </div>
+                
+                <div class="skill-cube">
+                    <div class="cube-inner">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS3</h3>
+                        <p>Advanced animations & layouts</p>
+                    </div>
+                    <div class="cube-glow"></div>
+                </div>
+                
+                <div class="skill-cube">
+                    <div class="cube-inner">
+                        <i class="fab fa-js-square"></i>
+                        <h3>JavaScript</h3>
+                        <p>Interactive experiences</p>
+                    </div>
+                    <div class="cube-glow"></div>
+                </div>
+                
+                <div class="skill-cube">
+                    <div class="cube-inner">
+                        <i class="fas fa-wind"></i>
+                        <h3>Tailwind</h3>
+                        <p>Utility-first CSS framework</p>
+                    </div>
+                    <div class="cube-glow"></div>
+                </div>
+                
+                <div class="skill-cube">
+                    <div class="cube-inner">
+                        <i class="fas fa-bolt"></i>
+                        <h3>GSAP</h3>
+                        <p>Professional animations</p>
+                    </div>
+                    <div class="cube-glow"></div>
+                </div>
+                
+                <div class="skill-cube">
+                    <div class="cube-inner">
+                        <i class="fab fa-react"></i>
+                        <h3>React</h3>
+                        <p>Component-based UI</p>
+                    </div>
+                    <div class="cube-glow"></div>
+                </div>
+                
+                <div class="skill-cube">
+                    <div class="cube-inner">
+                        <i class="fas fa-palette"></i>
+                        <h3>UI/UX Design</h3>
+                        <p>User-centered interfaces</p>
+                    </div>
+                    <div class="cube-glow"></div>
+                </div>
+                
+                <div class="skill-cube">
+                    <div class="cube-inner">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Responsive Design</h3>
+                        <p>Fluid across all devices</p>
+                    </div>
+                    <div class="cube-glow"></div>
+                </div>
+                
+                <div class="skill-cube">
+                    <div class="cube-inner">
+                        <i class="fas fa-gamepad"></i>
+                        <h3>Game UI Logic</h3>
+                        <p>Interactive game systems</p>
+                    </div>
+                    <div class="cube-glow"></div>
+                </div>
+                
+                <div class="skill-cube">
+                    <div class="cube-inner">
+                        <i class="fas fa-play-circle"></i>
+                        <h3>Animation Logic</h3>
+                        <p>Advanced motion design</p>
+                    </div>
+                    <div class="cube-glow"></div>
+                </div>
+                
+                <div class="skill-cube">
+                    <div class="cube-inner">
+                        <i class="fas fa-robot"></i>
+                        <h3>AI Tools</h3>
+                        <p>AI-powered development</p>
+                    </div>
+                    <div class="cube-glow"></div>
+                </div>
+                
+                <div class="skill-cube">
+                    <div class="cube-inner">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Creative Direction</h3>
+                        <p>Vision & concept development</p>
+                    </div>
+                    <div class="cube-glow"></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="section-header">
+                <h2 class="section-title">My Projects</h2>
+                <div class="section-subtitle">Immersive digital experiences</div>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-badge">Interactive</div>
+                        <div class="project-image-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <i class="fas fa-font"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Alphabet Learning App</h3>
+                        <p>An interactive educational app that teaches children the alphabet through animated characters, sound effects, and engaging mini-games.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <button class="project-btn">
+                            <span>View Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-badge">Game</div>
+                        <div class="project-image-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>2D HTML Game Engine</h3>
+                        <p>A fully interactive 2D game with joystick controls, coin collection system, character physics, and multiple levels.</p>
+                        <div class="project-tags">
+                            <span>Canvas API</span>
+                            <span>Game Logic</span>
+                            <span>Physics</span>
+                        </div>
+                        <button class="project-btn">
+                            <span>View Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-badge">E-commerce</div>
+                        <div class="project-image-placeholder" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Animated E-commerce UI</h3>
+                        <p>A premium e-commerce interface with smooth product animations, 3D views, cart interactions, and micro-transitions.</p>
+                        <div class="project-tags">
+                            <span>UI/UX</span>
+                            <span>Animations</span>
+                            <span>GSAP</span>
+                        </div>
+                        <button class="project-btn">
+                            <span>View Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-badge">AI</div>
+                        <div class="project-image-placeholder" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Video Enhancement</h3>
+                        <p>A micro-site for AI-powered video upscaling with real-time previews, before/after comparisons, and processing controls.</p>
+                        <div class="project-tags">
+                            <span>AI Tools</span>
+                            <span>Video API</span>
+                            <span>React</span>
+                        </div>
+                        <button class="project-btn">
+                            <span>View Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-badge">Template</div>
+                        <div class="project-image-placeholder" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Smooth Digital Products</h3>
+                        <p>A template for digital product showcases with 3D model viewers, interactive demos, and seamless purchase flows.</p>
+                        <div class="project-tags">
+                            <span>WebGL</span>
+                            <span>Three.js</span>
+                            <span>E-commerce</span>
+                        </div>
+                        <button class="project-btn">
+                            <span>View Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-badge">Typography</div>
+                        <div class="project-image-placeholder" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                            <i class="fas fa-text-height"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Typography Graphics System</h3>
+                        <p>A responsive typography system for creating beautiful text graphics across mobile and desktop with dynamic scaling.</p>
+                        <div class="project-tags">
+                            <span>Typography</span>
+                            <span>CSS Grid</span>
+                            <span>Responsive</span>
+                        </div>
+                        <button class="project-btn">
+                            <span>View Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                    <div class="project-glow"></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-subtitle">Let's create something amazing together</div>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-form-container">
+                    <div class="form-glass">
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required>
+                                <div class="input-glow"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                                <div class="input-glow"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <div class="input-glow"></div>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn magnetic" data-sound="send">
+                                <span>Send Message</span>
+                                <div class="btn-spinner">
+                                    <div class="spinner-dot"></div>
+                                    <div class="spinner-dot"></div>
+                                    <div class="spinner-dot"></div>
+                                </div>
+                                <div class="btn-success">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </button>
+                        </form>
+                        <div class="form-glow"></div>
+                    </div>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>Connect with me</h3>
+                    <p>I'm always open to discussing new opportunities, creative projects, or just chatting about the future of web experiences.</p>
+                    
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/moh.ariphula.isalama.55982" class="social-icon magnetic" data-sound="social" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://x.com/arifule0" class="social-icon magnetic" data-sound="social" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ariful_boss_?igsh=MmoyYjdmZmhvN2M=" class="social-icon magnetic" data-sound="social" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://github.com/arifulE0758m" class="social-icon magnetic" data-sound="social" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ariful-islam-7b8a1b1b8/" class="social-icon magnetic" data-sound="social" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://t.me/arifule0758" class="social-icon magnetic" data-sound="social" target="_blank">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>arifule0758@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Creative Studio, Digital Space</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span>Ariful Islam</span>
+                    <div class="footer-glow"></div>
+                </div>
+                <p class="footer-text">© 2023 Ariful Islam. All rights reserved. Crafted with passion and imagination.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <!-- Audio elements for interaction sounds -->
+    <audio id="hover-sound-1" preload="auto">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-select-click-1109.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="hover-sound-2" preload="auto">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-arcade-game-jump-coin-216.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="hover-sound-3" preload="auto">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-unlock-game-notification-253.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="send-sound" preload="auto">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-correct-answer-tone-2870.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="social-sound" preload="auto">
+        <source src="https://assets.mixkit.co/sfx/preview/mixkit-plastic-bubble-click-1124.mp3" type="audio/mpeg">
+    </audio>
+    
+    <!-- GSAP Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/TextPlugin.min.js"></script>
+    
+    <!-- Main JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
